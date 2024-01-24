@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slectors in html</title>
+</head>
+<style>
+    /* Element selectors */
+    div {
+        color: red;
+        background-color: yellow;
+    }
+
+    /* class selecotrs */
+    .green {
+        color: aquamarine;
+        background-color: grey;
+    }
+
+    /* ID selector */
+    #lime {
+        color: blue;
+        background-color: rgb(98, 180, 3);
+    }
+
+    /* child selecotrs */
+    div>p {
+        color: rgb(26, 11, 168);
+        background-color: rgb(206, 34, 34);
+    }
+
+    /* decendant slector
+    div p{
+        color: hotpink;
+        background-color: moccasin;
+    } */
+
+    /* psedo selector */
+    a:visited {
+        color: grey;
+    }
+
+    a:link {
+        color: greenyellow;
+    }
+
+
+    a:active {
+        background-color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+</style>
+
+<body>
+    <div>
+        hey my name is viresh
+    </div>
+
+
+    <div class="green">
+        hey i am a class in div and my name is green
+    </div>
+
+
+    <div id="lime">
+        hi this is using id selector
+    </div>
+
+
+    <div>
+        <p>this is paragraph inside the div</p>
+        <p>this is another para inside the div </p>
+    </div>
+
+
+    <div>
+        <article>
+            <p>this is paragraph inside the div</p>
+            <p>this is another para inside the div </p>
+        </article>
+        <!-- here when we use the child selecor it can only apply to childs , now here we used p tag in article then child selctor of p is not applicable beacuse here child is article and p is decendant of div. if we want to apply here i.e to ancestor then we have to use secendant selector -->
+    </div>
+
+    <a href="www.Google.com">go to google</a>
+
+
+
+</body>
+
+</html>
